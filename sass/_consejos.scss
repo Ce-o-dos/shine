@@ -1,0 +1,158 @@
+.consejos{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/fondo-section-small.jpg");
+    box-shadow: #190633;
+ 
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding-top: 30px;
+
+    @media (max-width: 1024px) {
+    height: 120vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+    }
+
+    @media (max-width: 580px) {
+        height: 200vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 85%;
+    }
+
+    @media (max-width: 338px) {
+        height: 120vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 70%;
+    }
+
+    .container__texto{
+        height: 100px;
+        .consejo__titulo{
+            font-size: 5rem;
+            text-align: center;
+            margin-top: 400px;
+
+            @media (max-width: 1024px){
+                margin-top: 50px;
+            }
+        }
+        
+        .consejo__subtitulo{
+            font-size: 10rem;
+            text-align: center;
+            margin-top: 100px;
+            color : $neon-color;
+            text-shadow: 0 0 5px $neon-color, 0 0 15px $neon-color, 0 0 30px $neon-color, 0 0 50px $neon-color;
+
+            @media (max-width: 1024px){
+                margin-top: 10px;
+            }
+
+            @media (max-width: 380px) {
+                font-size: 5rem;
+            }
+        }
+    }
+    
+    
+
+    .sobre{
+        display: grid;
+        grid-template-rows: 20% 20% 20% 20%;
+        height: 80%;
+        justify-content:center;
+
+
+        .sobre__li{
+            transition: all .15s;
+            display: grid;
+            grid-template-columns: auto auto;
+
+           
+        
+            
+            .sobre__img{
+                min-width: 100px;
+                box-shadow: -5px 7px 50px 30px black;
+
+            }
+
+            .sobre__cara{
+                transform: translatex(-250px);
+                @media (max-width: 1024px){
+                    
+                    transform: translateX(-100px); 
+                    
+                }
+                @media (max-width: 580px){
+                    overflow: hidden;
+                    width: 70vw;
+                    transform: translate(-0px,100px);
+                }
+
+                @media (max-width: 338px){
+                    transform: translate(-0px,100px);
+                }
+            }
+
+            .sobre__ojo{
+                transform: translatex(-150px);
+                @media (max-width: 1024px){
+                    
+                    transform: translateX(-50px); 
+                    
+                }
+                @media (max-width: 580px){
+                    width: 70vw;
+                    transform: translate(-0px, 130px); 
+                    min-width: 100px;
+                }
+
+                @media (max-width: 338px){
+                    transform: translate(-0px,100px);
+                }
+            }
+
+            .sobre__labios{
+                transform: translatex(-50px);
+                @media (max-width: 1024px){
+                    
+                    transform: translateX(-0px); 
+                    
+                }
+                @media (max-width: 580px){
+                    width: 70vw;
+                    transform: translate(-0px, 210px); 
+                }
+
+                @media (max-width: 338px){
+                    transform: translate(-0px,100px);
+                }
+            }
+
+            .sobre__brochas{
+                transform: translatex(50px);
+                @media (max-width: 1024px){
+                    
+                    transform: translateX(50px); 
+                    
+                }
+                @media (max-width: 580px){
+                    width: 70vw;
+                    transform: translate(-0px, 290px); 
+                }
+
+                @media (max-width: 338px){
+                    transform: translate(-0px,100px);
+                }
+            }
+
+            &:hover{
+                transform: translateY(-50px);
+                filter: brightness(.5);
+            }
+        }
+    }
+
+}

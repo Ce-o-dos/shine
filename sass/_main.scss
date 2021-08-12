@@ -1,0 +1,52 @@
+.main{
+    background: linear-gradient( $main-color 40%, $secundary-color 96%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @media (max-width: 670px){
+        background-image: url(../img/img-main.jpg);
+        justify-content: center;
+    }
+
+    .main__texto{
+        font-size: 3rem;
+        text-shadow: 12px black unset;
+    }
+    .card{
+        background-color: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        z-index: 5;
+        position: relative;
+
+        
+        .card__img{
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            box-shadow: -4px 7px 55px 20px $main-color;
+
+            @media (max-width: 670px){
+                display: none;
+            }
+        }
+
+        .main__bg-img{
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            background-color: black;
+            filter: blur(40px);
+            z-index: 0;
+            width: 570px;
+            height: 780px;
+            border: 20px solid $media-color;;
+                       
+        }
+    }
+}

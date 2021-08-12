@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+.footer{
+    background: $down-color;
+    height: 16vh;
+    
+    .container__subtitulos{
+        display: flex;
+        flex-wrap: wrap;
+        .footer__subtitulo{
+            font-size: 4rem;
+            @media (max-width: 510px){
+                font-size: 2rem;
+            }
+        }
+    
+        .footer__subtitulo--cambio{
+            font-size: 4rem;
+            background-color: $down-color;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            @media (max-width: 1024px){
+                font-size: 2rem;
+            }
+            @media (max-width: 510px){
+                font-size: 1.5rem;
+            }
+
+            @media (max-width: 382px){
+                font-size: 1rem;
+            }
+        }
+    
+    }
+
+    .footer__titulo{
+        font-size: 2rem;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    
+    .footer__redes{
+        display: flex;
+        justify-content: center;
+
+        .redes__lista{
+            list-style: none;
+            margin: 20px 10px;
+            
+            .fab{
+                color: #cf0c5d;
+                font-size: 4rem;
+            
+                &:hover{
+                    text-shadow: 0 0 5px $neon-color, 0 0 15px $neon-color, 0 0 30px $neon-color, 0 0 20px $neon-color;
+                }
+            }
+
+        }
+    }
+}
